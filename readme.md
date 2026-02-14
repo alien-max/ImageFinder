@@ -3,7 +3,6 @@
 A simple desktop application for finding similar and duplicate images using advanced perceptual hashing algorithms. Built with Python and PySide6, this tool helps you organize your image library by detecting visually similar images across your file system.
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
 ![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg)
 
 ## Features
@@ -226,10 +225,6 @@ Contributions are welcome! Areas for improvement:
 - [ ] Custom search path UI
 - [ ] Progress pause/resume
 - [ ] Image preview on hover
-
-## License
-
-This project is licensed under the MIT License. See LICENSE file for details.
 
 ## Acknowledgments
 
