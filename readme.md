@@ -238,12 +238,6 @@ This project is licensed under the MIT License. See LICENSE file for details.
 - **SciPy**: Scientific computing tools
 - **NumPy**: Numerical computing library
 
-## Support
-
-For issues, questions, or suggestions:
-- Open an issue on GitHub
-- Email: your.email@example.com
-
 ---
 
 **Made with ❤️ for organizing image libraries**
