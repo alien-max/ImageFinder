@@ -73,20 +73,7 @@ source venv/bin/activate
 ### 3. Install Dependencies
 
 ```bash
-# Install all required packages
-pip install -r requirements.txt
-
-# Or install individually:
 pip install PySide6 Pillow numpy scipy
-```
-
-### 4. Create requirements.txt (if not included)
-
-```txt
-PySide6>=6.5.0
-Pillow>=10.0.0
-numpy>=1.24.0
-scipy>=1.10.0
 ```
 
 ## Usage
@@ -95,7 +82,7 @@ scipy>=1.10.0
 
 ```bash
 # Make sure virtual environment is activated
-python image_finder.py
+python app.py
 ```
 
 ### First-Time Setup
@@ -109,9 +96,7 @@ python image_finder.py
    - Supported formats: JPG, JPEG, PNG, BMP, GIF, WebP
 
 3. **Adjust Sensitivity**: Use the slider to control similarity threshold
-   - **0-5**: Very strict (only near-identical images)
-   - **5-10**: More lenient (visually similar images)
-   - **10+**: Loose matching (may include false positives)
+   - **1-100**: similarity percentage
 
 4. **Browse Results**: Scroll through similar images
    - View similarity percentage and file size
@@ -122,10 +107,10 @@ python image_finder.py
 - **Distance**: Hamming distance between image hashes (lower = more similar)
 - **Similarity %**: Percentage-based similarity metric (higher = more similar)
 - **Color Coding**:
-  - 🟢 Green (Distance < 10): Nearly identical
-  - 🟡 Yellow (Distance 10-20): Very similar
-  - 🟠 Orange (Distance 20-30): Somewhat similar
-  - 🔴 Red (Distance > 30): Loosely similar
+  - 🟢 Green (Distance > 95%): Nearly identical
+  - 🟡 Yellow (Distance > 85%): Very similar
+  - 🟠 Orange (Distance > 75%): Somewhat similar
+  - 🔴 Red (Distance < 75%): Loosely similar
 
 ## How It Works
 

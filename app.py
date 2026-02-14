@@ -556,11 +556,11 @@ class ImageFinder(QMainWindow):
         if similarity >= 95:
             color = "#4CAF50"
         elif similarity >= 85:
-            color = "#8BC34A"
+            color = "#FBE70A"
         elif similarity >= 75:
-            color = "#FFC107"
+            color = "#FBAF0A"
         else:
-            color = "#FF9800"
+            color = "#F33B08"
 
         similarity_label.setStyleSheet(f"color: {color}; font-size: 11px; font-weight: bold;")
         info_layout.addWidget(similarity_label)
